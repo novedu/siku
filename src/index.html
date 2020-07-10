@@ -1,61 +1,1078 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/css/public.css">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/public.min.css">
+    
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap-grid.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    
+
 </head>
+
 <body>
     <!-- 头部 -->
     <div class="header">
-        <div class="secondHeaderCenter">
-            <div class="sheaderLeft">
-                <img src="img/logo.png" alt="" width="30px" height="70px">
+        <div class="top-bar ncontainer">
+            <div class="head-lang">
+                <div class="region-selection">
+                    <h4 class="selected-region">
+                        中文
+                    </h4>
+                    <i class="iconfont icon-arrow"></i>
+                    <ul class="region-options">
+                        <li class="region-option">中文</li>
+                        <li class="region-option">EN</li>
+                    </ul>
+                </div>
+                <div class="separate-line"></div>
+                <div class="currency-selection">
+                    <h4 class="selected-currency">RMB ¥</h4>
+                    <i class="icon-arrow n-hide"></i>
+                    <ul class="currency-options n-hide">
+                        <li class="currency-option">RMB ¥</li>
+                        <li class="currency-option">USD $</li>
+                        <li class="currency-option">EUR €</li>
+                        <li class="currency-option">GBP £</li>
+                        <li class="currency-option">HKD $</li>
+                    </ul>
+                </div>
             </div>
-            <div class="sheaderRight">
-                <a href="#">寺库首页</a>
-                <a href="#">收藏寺库</a>
-                <a href="#">寺库APP</a>
+
+            <div class="head-site clearfix">
+                <span class="register">
+                    <a class="zh" href="pages/log.html">登 录</a>
+                </span>
+                <span class="username">
+                    <a href="#"></a>
+                </span>
+                <div class="separate-line"></div>
+                <span class="sign-in">
+                    <a class="zh" href="pages/registered.html">注 册</a>
+                </span>
+                <div class="separate-line shopping-bag-line"></div>
+                <span class="shopping-bag">
+                    <a href="#">
+                        <i class="iconfont icon-gouwudai icon-shopping-bag"></i>
+                    </a>
+                </span>
+                <div class="separate-line"></div>
+                <span class="collection">
+                    <a href="#p">
+                        <i class="iconfont icon-shoucang icon-collection"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="head-logo">
+                <a href="#">
+                    <img src="img/013e7d9eb7674c799c3c21e84dd1c88a.jpg" alt="寺库">
+                </a>
             </div>
         </div>
-    </div>
-    <!-- 中部 -->
-    <div class="bgcolor">
-        <div class="reg_box clearfix">
-            <div class="reg_center">
-                <div class="tab_phone">
-                    <ul class="clearfix">
-                        <li class="clearfix">
-                            <div class="regTips clearfix">
-                                <span class="t_right">用户名</span>
-                                <div class="regName_tips focus  reg_userName">请输入手机号或者邮箱</div>
-                            </div>
-                            <div class="login_tips">
-                                <input type="text" value="" id="umeInput" class="fl reg_int reg_in">
-                            </div>
-                        </li>
-                        <li class="clearfix kapt_show">
-                            <div class="regTips clearfix">
-                                <span class="t_right">验证码</span>
-                            </div>
-                            <input type="text" id="kaptcha" class="fl reg_ins reg_in" tabindex="2">
-                            <a href="#" class="fl">
-                                <img src="" alt="">
-                            </a>
-                            <a href="#"></a>
-                        </li>
-                        <li class="clearfix verify_code_show"></li>
-                        <li class="clearfix"></li>
-                        <li class="clearfix"></li>
-                        <li class="clearfix"></li>
-                    </ul>
-                    <div class="btn_reg_submit">
+        <div class="nav-bar">
+            <div class="ncontainer  clearfix">
+                <div class="wrapper">
+                    <nav id="booNavigation" class="booNavigation">
+                        <ul>
+                            <li class="navItem">
+                                <a href="#" title="First Item">首页</a>
+                            </li>
 
+                            <li class="navItem">
+                                <a href="#" title="Second Item">包袋</a>
+                                <ul class="navContent" style="display: block;">
+                                    <li>
+                                        <ul>
+                                            <li><a href="pages/list.html" title="Boo the cat">男士包袋</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">斜挎包</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">钱包</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">双肩包</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">女士包</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">手拿包</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">拉杆包</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">手提包</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">爱马仕</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">路易威登</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">宝格丽</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">范思哲</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">普拉达</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">爱马仕</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">路易威登</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">宝格丽</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">范思哲</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">普拉达</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">爱马仕</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">路易威登</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">宝格丽</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">范思哲</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">普拉达</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="navItem">
+                                <a href="#" title="Third Item">腕表</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">男士</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">机械手表</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">女士</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">石英腕表</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="First Item">珠宝首饰</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">项链</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">吊坠</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">耳饰</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">手镯</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">戒指</a>
+                                                <li />
+                                            <li><a href="#" title="The best cat">戒指</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The best cat">The best cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="navItem">
+                                <a href="#" title="Second Item">服饰</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="navItem">
+                                <a href="#" title="Third Item">鞋履</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="First Item">配饰</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The best cat">The best cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The best cat">The best cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The best cat">The best cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="navItem">
+                                <a href="#" title="Second Item">运动</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="navItem">
+                                <a href="#" title="Third Item">家居</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="Third Item">美妆</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navItem">
+                                <a href="#" title="Third Item">生活方式</a>
+                                <ul class="navContent">
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul>
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Boo the cat">Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="The invisible cat">The invisible cat</a>
+                                                <li />
+                                            <li><a href="#" title="The amazing cat">The amazing cat</a>
+                                                <li />
+                                            <li><a href="#" title="Play with Boo the cat">Play with Boo the cat</a>
+                                                <li />
+                                            <li><a href="#" title="Pictures of Boo">Pictures of Boo</a>
+                                                <li />
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="s-search">
+                    <div class="search-inner">
+                        <input type="text" data-value="搜索" placeholder="搜索">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+   
+
+    <!-- banner -->
+    <div class="banner ncontainer clearfix">
+        <div class="secoo-trend">
+            <a href="#">
+                <div class="top-img">
+                    <img src="img/006540a457b446c2bc79be9b73ef5c7f.png">
+                    <div class="bg-mask"></div>
+                </div>
+                <div class="bottom-img">
+                    <img src="img/34f9f24874af4ae6a6a5d8f0aa253ddf.png">
+                </div>
+            </a>
+        </div>
+        <div class="international-brands">
+            <a href="#">
+                <div class="left-img">
+                    <img src="img/5e08f1525e484e95824002ae33cb6322.png">
+                </div>
+                <div class="right-img">
+                    <div class="bg-mask"></div>
+                    <img src="img/ad48819e0e524d72a31dfb902561f744.jpg">
+                </div>
+            </a>
+        </div>
+        <div class="banner-video">
+            <div class="bg-poster">
+                <div class="bg-mask"></div>
+                <div class="video-play"></div>
+                <img src="img/ab8194828ffc4a5a91202b5ac17c241d.jpg">
+            </div>
+            <video controls preload="none" src="img/secoo1111.mp4"></video>
+        </div>
+    </div>
+
+    <div class="editor-pick ncontainer">
+        <h3 class="title"></h3>
+        <div class="editor-pick-list swiper-container">
+            <ul class="product-list swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="#">
+                        <div class="product-img">
+                            <img src="img/361ac24ac56f41668fd7081318e03763.jpg" alt="" class="lazyPic">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="product-details">
+                            <p class="product-name">Lanvin/浪凡</p>
+                            <p class="product-desc">Lanvin/浪凡 【FW19】19秋冬 女士休闲运动鞋 FW-SKDLON-NASU-H19【官方授权】</p>
+                            <div class="line"></div>
+                            <p class="product-price">￥3,150</p>
+                        </div>
+                    </a>
+                </li>
+                
+                
+            </ul>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <!-- Add Arrows -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+        </div>
+        <div class="bottom-dir">
+            <a href="javascript:;" class="prev swiper-button-prev swiper-button-black">
+                <span></span>
+            </a>
+            <a href="javascript:;" class="next swiper-button-next swiper-button-black">
+                <span></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="fashion-wardrobe ncontainer">
+        <a href="#" class="zh">
+            <div class="left-img">
+                <div class="bg-mask"></div>
+                <img class="lazyPic" src="img/e3e8ba6182a54c92b56c53899b751116.jpg" alt="">
+                <div class="right-img">
+                    <img class="lazyPic" src="img/8ee9d414c7674563b892271e2eb81951.png" alt="">
+                </div>
+            </div>
+            <div></div>
+        </a>
+    </div>
+
+    <div class="secoo-app ncontainer">
+        <img class="lazyPic" src="img/cd2f846655a04cd1ad1341254a916431.jpg" alt="">
+    </div>
+
+    <ul class="plate-entry ncontainer clearfix">
+        <li>
+            <a href="">
+                <div class="bg-mask"></div>
+                <img class="lazyPic" src="img/f77de773a9a646a4a9e18ab28d6c710d.jpg" alt="">
+
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="bg-mask"></div>
+                <img class="lazyPic" src="img/31870faf4d624ab7873c02f59da6004b.jpg" alt="">
+            </a>
+        </li>
+        <li class="first-li">
+            <a href="">
+                <div class="bg-mask"></div>
+                <img class="lazyPic" src="img/5a68b33440ec4599aa553c5ce06e8e5e.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+
+    <div class="world-of-secoo">
+        <div class="ncontainer">
+            <h3 class="title">
+                <img src="img/the-world-of-secoo-title.png" alt="">
+            </h3>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <div class="bg-mask"></div>
+                        <img src="img/b80a21c2b985477885c4536cfecbb38b.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="bg-mask"></div>
+                        <img src="img/63229c04ab284807b634cd0b36178444.jpg" alt="">
+                    </a>
+                </li>
+                <li class="fr-li">
+                    <a href="#">
+                        <div class="bg-mask"></div>
+                        <img src="img/c154878a6dbb4380a52209cb64462cb0.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nfooter">
+        <div class="ncontainer">
+            <ul class="footer-links clearfix">
+                <li class="service-information">
+                    <h4 class="links-title">服务指南</h4>
+                    <ul class="clearfix">
+                        <li class="links-item">
+                            <a href="#">Investors</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">物流配送</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">售后服务</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">联系我们</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">加入我们</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">帮助</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">寺库招商</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">[公示]直销管理条例</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">[公示]禁止传销条例</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">《用户注册协议》</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">《隐私政策》</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">《平台服务协议》</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">《消费者告知书》</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="public-media">
+                    <h4 class="links-title">公共媒体</h4>
+                    <div class="footer-logo">
+                        <div class="weibo qr-code-p clearfix">
+                            <i class="iconfont icon-weibo"></i>
+                            <span class="zh">微博</span>
+                        </div>
+                        <div class="wechat qr-code-p clearfix">
+                            <i class="iconfont icon-weixin icon-wechat"></i>
+                            <span class="zh">微信</span>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="our-app">
+                    <h4 class="links-title">我们的APP</h4>
+                    <ul class="clearfix">
+                        <li class="links-item">
+                            <a href="#">寺库商城</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">Try Try</a>
+                        </li>
+                        <li class="links-item">
+                            <a href="#">寺库艺术</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p>
+                    <span>
+                        <a href="#">
+                            <img src="img/gh.png" alt="">
+                            京公网安备 11010502038706号
+                        </a>
+                    </span>
+                    <span>
+                        <a href="#">京ICP证110119号 京ICP备09084709号-3 </a>
+                    </span>
+                    <span>
+                        <a href="#">ISO9001中国质量管理体系认证</a>
+                    </span>
+                    <span>
+                        <a href="#"> 出版物经营许可证</a>
+                    </span>
+                    <span>
+                        <a href="#"> 食品经营许可证</a>
+                    </span>
+                    <span>
+                        京B2-20181305
+                    </span>
+                </p>
+                <p>
+                    <span>京食药网食备201810026</span>
+                    <span> (京)-非经营性-2019-0072</span>
+                    <span> 客服电话：400-875-6789</span>
+                    <span>COPYRIGHT © 2010-2018 北京寺库商贸有限公司 版权所有</span>
+                </p>
+                <p class="nfooter-info-imgs clearfix">
+                    <a href="#">
+                        <img src="img/f_01.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/cnnic.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/kexin.jpg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="img/f_03.jpg" alt="">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div style="width:300px;margin:0 auto; padding:70px 0 0 0;">
+            <a href="#" style='display:inline-block;text-decoration:none;height:20px;line-height:20px;''>
+                <img src="img/gh.png" alt="" style="float: left;">
+                <p style=' float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;''>京公网安备
+                11010502038706号</p>
+            </a>
+        </div>
+        <div class="fixed-qrcode ncontainer" style="display: block;">
+            <img src="img/ebc23e1b879a45c3be8f4124f7fd2d98.jpg" alt="">
+        </div>
+    </div>
 </body>
+    <script src="js/swiper.min.js"></script>
+    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/dropdown.min.js"></script>
+    <script>
+        (function () {
+
+            /**
+             * This is the call we have to do to execute
+             * the plugin giving a custom params
+             */
+            $('#booNavigation').booNavigation({
+                slideSpeed: 400
+            });
+
+            $('#booNavigationTwo').booNavigation({
+                slideSpeed: 200
+            });
+
+        })();
+
+    </script>
+    <script src="js/index.min.js"></script>
 </html>

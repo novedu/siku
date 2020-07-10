@@ -1,0 +1,189 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.shell{
+    height: 700px;
+    margin-top: 50px;
+    background-color: #ffffff;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+div.box {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+    border: 1px solid black;
+}
+
+div.box a.phone-display {
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+
+div.bottom-nav{
+    margin-top: 20px;
+}
+
+div.bottom-nav div.tab-btn{
+    position: relative;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+}
+
+div.tab-btn:hover{
+    opacity: .6;
+}
+
+div.tab-btn.btn-left{
+    float: left;
+}
+
+div.tab-btn.btn-right{
+    float: right;
+}
+
+i.shift-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 26px;
+    height: 26px;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+i.shift-icon>span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1.5px solid #999;
+}
+
+div.btn-left i.shift-icon>span {
+    border-left: 1.5px solid #999;
+    transform: translate(-30%, -50%) rotate(45deg);
+}
+div.btn-right i.shift-icon>span {
+    border-right: 1.5px solid #999;
+    transform: translate(-70%, -50%) rotate(-45deg);
+}
+
+
+div.bottom-nav div.bottom-center-nav{
+    position: relative;
+    height: 60px;
+    margin: 0 50px;
+    overflow: hidden;
+}
+div.bottom-center-nav ul.small-img-ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+ul.small-img-ul li.img{
+    float: left;
+    width: 60px;
+    height: 100%;
+    border:1px solid transparent;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+ul.small-img-ul li.img.active{
+    border-color: rgb(160, 27, 27);
+}
+
+.tails{
+    a{
+        position: absolute;
+        left: 1000px;
+        top: 600px;
+        input{
+            width: 120px;
+            height: 50px;
+            text-align: center;
+            border: 3px solid red;
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+        .buy-input{
+            background-color:red;
+            color: #ffffff;
+        }
+    }
+    .buy{
+        position: absolute;
+        left: 800px;
+        top: 600px;
+    }
+    .mation{
+        position: absolute;
+        left: 650px;
+        top: 300px;
+        p{
+            padding-bottom: 10px;
+        }
+        .dot{
+            border-bottom: 2px dotted #ccc;
+        }
+        .dot2{
+            border-top: 2px dotted #ccc;
+        }
+
+        .pdd{
+            input{
+                border: 0 none;
+                display: block;
+                width: 34px;
+                height: 18px;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .b1{
+        margin: 10px auto;
+        p{
+            line-height: 20px;
+           
+        }
+    }
+    .b2{
+        p{
+            margin-top: 10px;
+        }
+        span img{
+            position: absolute;
+            left: 90px;
+            top: 178px;
+            border: 2px solid #666;
+        }
+    }
+}

@@ -3,8 +3,7 @@ body,h1,h2,h3,h4,h5,h6,hr,p,ul,ol,dl,dd,fieldset,input,option,textarea,td{
 	padding:0;
 }
 body{
-    font-family: tahoma,arial,宋体,sans-serif;
-    font-size: 12px;
+	font-family: "微软雅黑";
 }
 a{
 	text-decoration: none;
@@ -20,86 +19,392 @@ img{
 /*头部*/
 .header{
     width: 100%;
-    height: 70px;
-    background-color: rgb(0, 0, 0);
-    .secondHeaderCenter{
-        width: 1200px;
-        margin: 0 auto;
-        display:flex;
-        justify-content: space-between;
-        .sheaderLeft{
-            img{
-                width: 30px;
-                border: 0;
-                vertical-align: middle;
-            }
-        }
-        .sheaderRight{
-            float: right;
-            a{
-                display: inline-block;
-                line-height: 70px;
-                padding: 0 10px;
-                color:#666;
-            }
-            a:hover{
-                color: #c69c6d;
-            }
-        }
-    }
-}
-
-/*中部*/
-.bgcolor{
-    padding: 30px 0;
-    .reg_box{
-        width: 1200px;
-        margin: 0 auto;
-        height: 720px;
-        .reg_center{
-            width: 310px;
-            padding: 30px 35px;
-            float: right;
-            background-color: #c69c6d;
-            margin-top: 80px;
-            position: relative;
-        }
-    }
-}
-
-.tab_phone ul li{
-    .regTips{
-        width: 100%;
-        .t_right{
-            width: 60px;
-            height: 40px;
-            line-height: 40px;
-            color: #666;
-            float: left;
-        }
-        .focus{
-            color: #999;
-            width: 240px;
-            height: 40px;
-            line-height: 40px;
-            text-align: right;
-            font-family: microsoft yahei;
-             float: right;
-             font-size: 14px;
-        }
-    }
-}
-.tab_phone ul li .login_tips{
-    .reg_in{
-        width: 298px;
-        height: 20px;
-        line-height: 20px;
-        padding: 10px 5px;
-        border: 1px solid #dedede;
+    border: #fff;
+    // background:#ccc;
+    .top-bar{
+        height: 130px;
         font-size: 14px;
-        font-weight: bold;
-        font-family: 'microsoft yahei';
-        border-radius: 0;
+        color: #000;
+        width: 1200px;
+        margin: 0 auto;
+        .head-lang{
+            float: left;
+            margin-top: 62px;
+            vertical-align: middle;
+            .region-selection{
+                width: 40px;
+                padding-left: 25px;
+                cursor: pointer;
+                .icon-arrow{
+                    background: url(../img/spirits.png) no-repeat 87px 8px ;
+                    width: 100px;
+                    height: 20px;
+                    z-index: 1;
+                }
+            }
+            .region-selection .currency-selection{
+                position: relative;
+                float: left;
+                height: 28px;
+                padding-right: 20px;
+                padding-bottom: 3px;
+                line-height: 28px;
+            }
+            .icon-arrow{
+                position: absolute;
+                top: 0;
+                right: 9px;
+                
+            }
+            .iconfont{
+                font-family: "iconfont" !important;
+                font-size: 16px;
+                font-style: normal;
+                -webkit-font-smoothing: antialiased;
+            }
+            .region-options, .currency-options{
+                position: absolute;
+                top: 31px;
+                left: 0;
+                width: 84px;
+                border: 1px solid #000;
+                display: none;
+                background-color: #fff;
+                color: #000;
+                z-index: 10;
+            }
+            .region-option, .currency-option{
+                width: 100%;
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                font-family: 'INTERVOGUE-REG', 'PingFangSC-Regular';
+            }
+            .separate-line{
+                float: left;
+                width: 1px;
+                height: 28px;
+                background-color: #ccc;
+            }
+            .currency-selection{
+                width: 49px;
+                padding-left: 17px;
+            }
+            .region-selection, .currency-selection{
+                position: relative;
+                float: left;
+                height: 28px;
+                padding-right: 20px;
+                padding-bottom: 3px;
+                line-height: 28px;
+            }
+        }
+        .head-site{
+            float: right;
+            margin-top: 62px;
+            .register{
+                margin-right: 17px;
+            }
+            a{
+                color: #000;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 12px;
+            }
+            span{
+                float: left;
+                height: 28px;
+                font-size: 0;
+                line-height: 28px;
+            }
+            .username{
+                margin-right: 15px;
+            }
+            .separate-line{
+                float: left;
+                width: 1px;
+                height: 28px;
+                background-color: #ccc;
+            }
+            .shopping-bag{
+                float: left;
+                height: 28px;
+                font-size: 0;
+                line-height: 28px;
+            }
+            .sign-in{
+                width: 63px;
+                text-align: center;
+            }
+
+        }
+        .head-logo{
+            width: 189px;
+            height: 75px;
+            margin: 0 auto;
+            padding-top: 29px;
+        }
+
+        h4{
+            font-family: 'INTERVOGUE-REG', 'Microsoft YaHei';
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 28px;
+            margin: 0;
+            padding-right: 4px;
+            text-align: center;
+        }
+    }
+    
+    .nav-bar{
+        position: relative;
+        width: 100%;
+        background-color: #000;
+        display: flex;
+    }
+    .s-search{
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        color: #ffb81c;
+        cursor: pointer;
+        .search-inner{
+            position: relative;
+            width: 55px;
+            height: 20px;
+            padding-bottom: 7px;
+            margin-top: 15px;
+            border-bottom: 1px solid transparent;
+            padding-right: 30px;
+            input{
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                background-color: transparent;
+                color: #ffb81c;
+                caret-color: #ffb81c;
+                border: 0 none;
+                cursor: pointer;
+            }
+        }
     }
 }
+.ncontainer{
+    margin: 0 auto;
+}
+
+/* 二级菜单 */
+
+.wrapper {
+    margin: 10px auto;
+    width: 1200px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+/** Navigation theme
+================================================== */
+.booNavigation {
+    position: relative;
+}
+
+.booNavigation li.navItem {
+    background-color: black;
+    padding: 15px 20px;
+    float: left;
+    text-decoration: none;
+
+    transition: all .3s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease; 
+}
+
+.booNavigation li.navItem:hover {
+    background-color: #444;
+    border-color: #000;
+    cursor: pointer;
+}
+
+.booNavigation li.navItem > a {
+    color: #ffb81c;
+}
+.booNavigation li.navItem > a:hover {
+    color: #fff;
+}
+
+.booNavigation li.navItem .navContent {
+    background-color: #fff;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    z-index: 999;
+}
+
+.booNavigation .navContent > li {
+    color: #fff;
+    float: left;
+    padding: 10px;
+    width: 30%; 
+    width: 150px;
+    margin-top: 30px;
+}
+
+.booNavigation .navContent ul li a {
+    float: left;
+    width: 200px;
+    height: 40px;
+    font-size: 13px;
+    color: #666666;
+
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease; 
+}
+
+.booNavigation .navContent ul li a:hover {
+    text-decoration:underline ;
+}
+.booNavigation .navContent  h4{
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; 
+}
+
+/** Navigation examples
+================================================== */
+.nav-example {
+    clear: left;
+}
+
+
+/*----footer----*/
+
+.nfooter {
+    height: 525px;
+    padding-top: 40px;
+    // margin-top: 70px;
+    background-color: #ffb81c;
+    font-size: 16px;
+    .ncontainer{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .footer-links>li {
+        float: left;
+    }
+    .service-information {
+        width: 325px;
+        .links-item{
+            float: left;
+            width: 140px;
+        }
+    }
+    .links-item{
+        height: 33px;
+    }
+}
+.nfooter .service-information .links-title, .nfooter .our-app .links-title {
+    margin-bottom: 26px;
+}
+
+.nfooter{
+    .footer-links{
+        overflow: hidden;
+    }
+    .footer-links>li {
+        float: left;
+    }
+    .public-media {
+        text-align: center;
+    }
+    .links-title {
+        font-size: 16px;
+    }
+    .footer-logo {
+        position: relative;
+        width: 550px;
+        height: 240px;
+        background: url(../img/footer-logo.png) no-repeat 100%;
+        .weibo {
+            left: 91px;
+            top: 107px;
+            position: absolute;
+            .icon-weibo{
+                background: url(../img/spirits.png) no-repeat -70px -2px
+            }
+        }
+        .wechat {
+            position: absolute;
+            top: 107px;
+            left: 394px;
+            height: 20px;
+            cursor: pointer;
+        }
+        .icon-weixin{
+            background: url(../img/spirits.png) no-repeat -100px -2px
+        }
+    }
+} 
+.nfooter .footer-logo .weibo .icon-weibo, .nfooter .footer-logo .wechat .icon-wechat {
+    float: left;
+    width: 25px;
+    height: 20px;
+    font-size: 24px;
+    margin-right: 5px;
+    margin-top: -5px;
+}
+
+.nfooter .our-app {
+    margin-left: 207px;
+}
+.nfooter .footer-info {
+    margin-top: 40px;
+    font-size: 14px;
+    p{
+        margin-bottom: 20px;
+    }
+    span{
+        margin-right: 30px;
+    }
+}
+.nfooter-info-imgs a{
+    float: left;
+    margin-right: 20px;
+    width: 108px;
+    height: 40px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.fixed-qrcode {
+    position: fixed;
+    left: 1%;
+    bottom: 15px;
+    margin-left: -732px;
+    width: 120px;
+    height: 164px;
+    z-index: 100;
+}
+
 
